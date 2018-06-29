@@ -74,7 +74,7 @@ def showCategory(catalog_id):
 
     # Get all items of a specific category
     categoryItems = session.query(CategoryItem).filter_by
-    (category_id = catalog_id).all()
+    (category_Id=catalog_id).all()
 
     # Get count of category items
     categoryItemsCount = session.query(CategoryItem).filter_by
